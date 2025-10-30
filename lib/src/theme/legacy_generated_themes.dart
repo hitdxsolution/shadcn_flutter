@@ -1,12 +1,11 @@
 import '../../shadcn_flutter.dart';
+import 'dart:ui';
 
 void _assertNotThemeModeSystem(ThemeMode mode, String label) {
   if (mode == ThemeMode.system) {
     final List<DiagnosticsNode> diagnosticList = [];
-    diagnosticList.add(ErrorSummary(
-        'ColorSchemes.${label.toLowerCase()}(ThemeMode mode) can only be used with ThemeMode.light or ThemeMode.dark.'));
-    diagnosticList.add(ErrorDescription(
-        'This method is only intended as a helper method to get either ColorSchemes.light$label() or ColorSchemes.dark$label().'));
+    diagnosticList.add(ErrorSummary('ColorSchemes.${label.toLowerCase()}(ThemeMode mode) can only be used with ThemeMode.light or ThemeMode.dark.'));
+    diagnosticList.add(ErrorDescription('This method is only intended as a helper method to get either ColorSchemes.light$label() or ColorSchemes.dark$label().'));
     diagnosticList.add(ErrorHint('To use system theme mode, do this:\n'
         'ShadcnApp(\n'
         '  theme: ThemeData(colorScheme: ColorSchemes.${label.toLowerCase()}(ThemeMode.light)),\n'
@@ -40,15 +39,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       muted: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.46).toColor(),
       accent: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
@@ -60,11 +57,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 240.0, 0.1, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
     );
@@ -88,8 +83,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       input: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       ring: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.84).toColor(),
@@ -101,11 +95,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 240.0, 0.1, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.84).toColor(),
     );
@@ -127,20 +119,17 @@ class LegacyColorSchemes {
       card: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
       cardForeground: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       popover: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
-      popoverForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
+      popoverForeground: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       primary: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       muted: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 215.4, 0.16, 0.47).toColor(),
       accent: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 214.3, 0.32, 0.91).toColor(),
       input: const HSLColor.fromAHSL(1, 214.3, 0.32, 0.91).toColor(),
       ring: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
@@ -150,14 +139,11 @@ class LegacyColorSchemes {
       chart4: const HSLColor.fromAHSL(1, 43.0, 0.74, 0.66).toColor(),
       chart5: const HSLColor.fromAHSL(1, 27.0, 0.87, 0.67).toColor(),
       sidebar: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
-      sidebarForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
+      sidebarForeground: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 214.3, 0.32, 0.91).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
     );
@@ -173,18 +159,15 @@ class LegacyColorSchemes {
       popover: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       popoverForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       primary: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
-      primaryForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      primaryForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       secondary: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 215.0, 0.2, 0.65).toColor(),
       accent: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       input: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       ring: const HSLColor.fromAHSL(1, 212.7, 0.27, 0.84).toColor(),
@@ -196,11 +179,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 212.7, 0.27, 0.84).toColor(),
     );
@@ -232,8 +213,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
@@ -245,11 +225,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.98).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
     );
@@ -267,15 +245,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       secondary: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 24.0, 0.05, 0.64).toColor(),
       accent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       input: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       ring: const HSLColor.fromAHSL(1, 24.0, 0.06, 0.83).toColor(),
@@ -287,11 +263,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 24.0, 0.06, 0.83).toColor(),
     );
@@ -313,20 +287,17 @@ class LegacyColorSchemes {
       card: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
       cardForeground: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       popover: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
-      popoverForeground:
-          const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
+      popoverForeground: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       primary: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       muted: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 220.0, 0.09, 0.46).toColor(),
       accent: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 220.0, 0.13, 0.91).toColor(),
       input: const HSLColor.fromAHSL(1, 220.0, 0.13, 0.91).toColor(),
       ring: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
@@ -336,14 +307,11 @@ class LegacyColorSchemes {
       chart4: const HSLColor.fromAHSL(1, 43.0, 0.74, 0.66).toColor(),
       chart5: const HSLColor.fromAHSL(1, 27.0, 0.87, 0.67).toColor(),
       sidebar: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
-      sidebarForeground:
-          const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
+      sidebarForeground: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 220.0, 0.13, 0.91).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
     );
@@ -359,18 +327,15 @@ class LegacyColorSchemes {
       popover: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       popoverForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       primary: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
-      primaryForeground:
-          const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
+      primaryForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       secondary: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 217.9, 0.11, 0.65).toColor(),
       accent: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       input: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       ring: const HSLColor.fromAHSL(1, 216.0, 0.12, 0.84).toColor(),
@@ -382,11 +347,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 216.0, 0.12, 0.84).toColor(),
     );
@@ -418,8 +381,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.04).toColor(),
@@ -431,11 +393,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.04).toColor(),
     );
@@ -459,8 +419,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       input: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       ring: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.83).toColor(),
@@ -472,11 +431,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.83).toColor(),
     );
@@ -508,8 +465,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
@@ -521,11 +477,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.09).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
     );
@@ -549,8 +503,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       input: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       ring: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
@@ -562,11 +515,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.15).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
     );
@@ -592,15 +543,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       secondary: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       muted: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.46).toColor(),
       accent: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
@@ -612,11 +561,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 240.0, 0.1, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
     );
@@ -640,8 +587,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
       border: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       input: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       ring: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
@@ -653,11 +599,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.95).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 346.8, 0.77, 0.5).toColor(),
     );
@@ -689,8 +633,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 24.6, 0.95, 0.53).toColor(),
@@ -702,11 +645,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 24.6, 0.95, 0.53).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 24.6, 0.95, 0.53).toColor(),
     );
@@ -724,15 +665,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 20.5, 0.9, 0.48).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 24.0, 0.05, 0.64).toColor(),
       accent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.72, 0.51).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       input: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       ring: const HSLColor.fromAHSL(1, 20.5, 0.9, 0.48).toColor(),
@@ -744,11 +683,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 20.5, 0.9, 0.48).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 20.5, 0.9, 0.48).toColor(),
     );
@@ -774,15 +711,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 142.1, 0.76, 0.36).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       secondary: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       muted: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.46).toColor(),
       accent: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 142.1, 0.76, 0.36).toColor(),
@@ -794,11 +729,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 240.0, 0.1, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 142.1, 0.76, 0.36).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 355.7, 1.0, 0.97).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 240.0, 0.05, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.1).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 240.0, 0.06, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 142.1, 0.76, 0.36).toColor(),
     );
@@ -822,8 +755,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 0.0, 0.86, 0.97).toColor(),
       border: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       input: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       ring: const HSLColor.fromAHSL(1, 142.4, 0.72, 0.29).toColor(),
@@ -835,11 +767,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.95).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 142.1, 0.71, 0.45).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 144.9, 0.8, 0.1).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 144.9, 0.8, 0.1).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 0.0, 0.0, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 240.0, 0.04, 0.16).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 142.4, 0.72, 0.29).toColor(),
     );
@@ -861,20 +791,17 @@ class LegacyColorSchemes {
       card: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
       cardForeground: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       popover: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
-      popoverForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
+      popoverForeground: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       primary: const HSLColor.fromAHSL(1, 221.2, 0.83, 0.53).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       muted: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 215.4, 0.16, 0.47).toColor(),
       accent: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 214.3, 0.32, 0.91).toColor(),
       input: const HSLColor.fromAHSL(1, 214.3, 0.32, 0.91).toColor(),
       ring: const HSLColor.fromAHSL(1, 221.2, 0.83, 0.53).toColor(),
@@ -884,14 +811,11 @@ class LegacyColorSchemes {
       chart4: const HSLColor.fromAHSL(1, 43.0, 0.74, 0.66).toColor(),
       chart5: const HSLColor.fromAHSL(1, 27.0, 0.87, 0.67).toColor(),
       sidebar: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
-      sidebarForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
+      sidebarForeground: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 221.2, 0.83, 0.53).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 214.3, 0.32, 0.91).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 221.2, 0.83, 0.53).toColor(),
     );
@@ -907,18 +831,15 @@ class LegacyColorSchemes {
       popover: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       popoverForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       primary: const HSLColor.fromAHSL(1, 217.2, 0.91, 0.6).toColor(),
-      primaryForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      primaryForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       secondary: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 215.0, 0.2, 0.65).toColor(),
       accent: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       input: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       ring: const HSLColor.fromAHSL(1, 224.3, 0.76, 0.48).toColor(),
@@ -930,11 +851,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 222.2, 0.84, 0.05).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 217.2, 0.91, 0.6).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 222.2, 0.47, 0.11).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 210.0, 0.4, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 217.2, 0.33, 0.18).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 224.3, 0.76, 0.48).toColor(),
     );
@@ -966,8 +885,7 @@ class LegacyColorSchemes {
       accent: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       input: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       ring: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
@@ -979,11 +897,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 47.9, 0.96, 0.53).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 26.0, 0.83, 0.14).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 26.0, 0.83, 0.14).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 60.0, 0.05, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 24.0, 0.1, 0.1).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 20.0, 0.06, 0.9).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
     );
@@ -1001,15 +917,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 47.9, 0.96, 0.53).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 26.0, 0.83, 0.14).toColor(),
       secondary: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 24.0, 0.05, 0.64).toColor(),
       accent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       input: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       ring: const HSLColor.fromAHSL(1, 35.5, 0.92, 0.33).toColor(),
@@ -1021,11 +935,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 20.0, 0.14, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 47.9, 0.96, 0.53).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 26.0, 0.83, 0.14).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 26.0, 0.83, 0.14).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 60.0, 0.09, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 12.0, 0.07, 0.15).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 35.5, 0.92, 0.33).toColor(),
     );
@@ -1047,20 +959,17 @@ class LegacyColorSchemes {
       card: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
       cardForeground: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       popover: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
-      popoverForeground:
-          const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
+      popoverForeground: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       primary: const HSLColor.fromAHSL(1, 262.1, 0.83, 0.58).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       muted: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 220.0, 0.09, 0.46).toColor(),
       accent: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.84, 0.6).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 220.0, 0.13, 0.91).toColor(),
       input: const HSLColor.fromAHSL(1, 220.0, 0.13, 0.91).toColor(),
       ring: const HSLColor.fromAHSL(1, 262.1, 0.83, 0.58).toColor(),
@@ -1070,14 +979,11 @@ class LegacyColorSchemes {
       chart4: const HSLColor.fromAHSL(1, 43.0, 0.74, 0.66).toColor(),
       chart5: const HSLColor.fromAHSL(1, 27.0, 0.87, 0.67).toColor(),
       sidebar: const HSLColor.fromAHSL(1, 0.0, 0.0, 1.0).toColor(),
-      sidebarForeground:
-          const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
+      sidebarForeground: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 262.1, 0.83, 0.58).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 220.0, 0.14, 0.96).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 220.9, 0.39, 0.11).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 220.0, 0.13, 0.91).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 262.1, 0.83, 0.58).toColor(),
     );
@@ -1095,15 +1001,13 @@ class LegacyColorSchemes {
       primary: const HSLColor.fromAHSL(1, 263.4, 0.7, 0.5).toColor(),
       primaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       secondary: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
-      secondaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      secondaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       muted: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       mutedForeground: const HSLColor.fromAHSL(1, 217.9, 0.11, 0.65).toColor(),
       accent: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       accentForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       destructive: const HSLColor.fromAHSL(1, 0.0, 0.63, 0.31).toColor(),
-      destructiveForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      destructiveForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       border: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       input: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       ring: const HSLColor.fromAHSL(1, 263.4, 0.7, 0.5).toColor(),
@@ -1115,11 +1019,9 @@ class LegacyColorSchemes {
       sidebar: const HSLColor.fromAHSL(1, 224.0, 0.71, 0.04).toColor(),
       sidebarForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarPrimary: const HSLColor.fromAHSL(1, 263.4, 0.7, 0.5).toColor(),
-      sidebarPrimaryForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      sidebarPrimaryForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarAccent: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
-      sidebarAccentForeground:
-          const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
+      sidebarAccentForeground: const HSLColor.fromAHSL(1, 210.0, 0.2, 0.98).toColor(),
       sidebarBorder: const HSLColor.fromAHSL(1, 215.0, 0.28, 0.17).toColor(),
       sidebarRing: const HSLColor.fromAHSL(1, 263.4, 0.7, 0.5).toColor(),
     );
